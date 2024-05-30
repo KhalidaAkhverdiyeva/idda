@@ -1,0 +1,25 @@
+.numbers {
+    @include Flexbox($justify:flex-end, $gap:6px,);
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 1390px;
+    margin-bottom: 30px;
+    
+
+    > div {
+        @include putCenter;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $page-number-background1;
+        color: $primary-text-color;
+        cursor: pointer;
+    }
+
+    .wht {
+        background-color: $page-number-background2;
+        color: white;
+        cursor: pointer;
+    }
+}

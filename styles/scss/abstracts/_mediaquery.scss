@@ -1,0 +1,60 @@
+
+
+@media screen and (max-width: 1500px) {
+    .headerTop {
+        width: 1160px;
+    }
+    .innerNav {
+        width: 1160px;
+    }
+
+    .rows {
+        max-width: 1160px !important;
+        padding-top: 127px !important;
+    }
+     .numbers {
+        max-width: 1160px !important;
+
+    }
+    
+  }
+
+@media screen and (max-width: 1200px) {
+    
+
+    .mobileFlex {
+        display: flex !important;
+    }
+    header, .innerNavWrapper {
+        display: none;
+    }
+
+    .footerTopContainer {
+        flex-direction: column !important;
+        align-items: center !important;
+        
+    }
+
+    .footerBottom {
+        flex-direction: column !important;
+        gap: 20px;
+
+        > div {
+            @include putCenter;
+        }
+    }
+
+    
+  }
+
+  @media  screen and (max-width:1000px) {
+    .rows{
+        display: block !important;
+
+    }
+
+    .rows .cardWrapper2{
+        max-width: 100% !important;
+    }
+    
+  }

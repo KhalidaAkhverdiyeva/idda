@@ -1,0 +1,35 @@
+.innerNavWrapper {
+    border-bottom: solid 1px rgb(224, 223, 223);
+    .innerNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: $container-width-web;
+        padding: 20px 15px;
+        
+        > img {
+            width: 304px;
+            height: 83px;
+            padding-right: 81px;
+        }
+    
+        .navText {
+            display: flex;
+    
+    
+            > div {
+                padding-left: 30px;
+                font-size:$nav-text-size;
+                font-weight: 600;
+                color: $primary-text-color;
+                cursor: pointer;
+            }
+        }
+    
+    
+    }
+
+}
+
+

@@ -1,0 +1,96 @@
+header{
+    background-color: $header-background-color;
+    position: relative;
+    z-index: 1;
+    .headerTop {
+        
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $container-width-web;
+        padding: 0 15px;
+    
+        .tkt {
+            display: flex;
+            padding: 17px 0px;
+    
+            > div {
+               padding:  7px 20px 5px;
+               background-color: white;
+               box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+               border-radius: 5px;
+               border: none;
+               cursor: pointer;
+            }
+    
+            >:nth-child(2){
+                margin-left: 30px;
+            }
+            >:nth-child(3){
+                margin-left: 30px;
+            }
+        }
+    
+        >:first-child > div {
+            color: $secondary-text-color;
+            font-size: $heading-ending-tiny-text;
+            font-weight: 500;
+        }
+    
+    
+        .search{
+            background-color: #F2F3F3;
+            border-radius: $border-rounded;
+            width: 48px;
+            height: 48px;
+            @include putCenter;
+            cursor: pointer;
+    
+            > i {
+                color: rgb(98, 98, 98);
+            }
+        }
+    }
+
+}
+
+
+.mobileFlex {
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(224, 223, 223);
+    margin: 0 auto;
+    width: 100%;
+    
+    
+
+    > img {
+        width: 240px;
+        height: 65px;
+        margin-bottom: 8px;
+    }
+
+    .mobileFlexText {
+        display: flex;
+
+
+             > div {
+                padding:  7px 20px 5px;
+               background-color: white;
+               box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+               border-radius: 5px;
+               border: none;
+               color: $secondary-text-color;
+            font-size: $heading-ending-tiny-text;
+            font-weight: 500;
+            cursor: pointer;
+
+             }
+        
+    }
+}

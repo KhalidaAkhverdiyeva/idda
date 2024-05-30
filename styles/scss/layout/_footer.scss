@@ -1,0 +1,111 @@
+footer {
+
+    background-color: $header-background-color;
+    
+
+    .footerTop {
+        margin: 0 auto;
+        
+        
+    }
+
+    .footerTopContainer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: $container-width-web;
+        border-bottom: 1px solid rgb(214, 214, 214);
+    
+        >:first-child {
+            flex: 50%;
+            padding: 20px 0px;
+            
+        }
+         
+        .socials{
+            display: flex;
+            gap: 20px;
+            flex: 50%;
+            align-items: center;
+            padding: 20px 0px;
+            
+    
+            > div {
+                width: 29px;
+                height: 29px;
+                @include putCenter;
+                color: white;
+                border-radius: $border-rounded;
+                cursor: pointer;
+
+                > i {
+                    @include putCenter;
+                }
+            }
+    
+            >div:nth-child(1){
+                background-color: #3B5998;
+            }
+            >div:nth-child(2){
+                background-color: #007AB9;
+            }
+            >div:nth-child(3){
+                background: #833ab4;
+                background: linear-gradient(
+                  to right,
+                  #833ab4,#fd1d1d,#fcb045
+                );
+            }
+            >div:nth-child(4){
+                background-color: #57ADEE;
+            }
+            >div:nth-child(5){
+                background-color: #D42428;
+            }
+        }
+    }
+
+    .footerBottom {
+        max-width: 1390px;
+        margin: 0 auto;
+        padding: 21px 0px;
+        @include Flexbox($justify:space-between,$item:center);
+        font-size: 13px;
+        color: #4E5D78;
+        font-weight: 500;
+        
+
+
+        >:first-child{
+            display: flex;
+            gap: 20px;
+
+             .underline {
+                cursor: pointer;
+                position: relative;
+               
+            }
+
+
+            .underline:hover {
+                color: black;
+
+            }
+            .underline::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 0;
+                height: 2px; 
+                background-color: black; 
+                transition: width 0.5s ease;
+              }
+
+              .underline:hover::after {
+                width: 100%;
+              }
+        }
+    }
+    
+}

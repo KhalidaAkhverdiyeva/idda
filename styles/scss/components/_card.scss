@@ -1,0 +1,89 @@
+
+.newsContainer {
+   padding-bottom: 90px;
+
+   .numbers {
+      margin: 0 auto;
+      max-width: $container-width-web;
+      padding-right: 15px;
+
+   }
+   .rows {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: $container-width-web;
+      padding-top: 196px;
+      margin: 0 auto;
+      overflow: hidden;
+      
+  
+      .cardWrapper2 {
+          flex: 0 0 calc(100% / 3); 
+          max-width: calc(100% / 3);
+          overflow: hidden;
+          background-position: center;
+          padding: 0px 15px;
+  
+  
+               .cardWrapper1 {
+                  box-shadow: $box-shadow;
+                  margin-bottom: 30px;
+                  min-height: 367px;
+                  border-radius: 8px;
+                  transition: transform 0.3s ease-in-out;
+                  cursor: pointer;
+               }
+  
+               .cardWrapper1:hover {
+                  transform: scale(1.03);
+               }
+  
+             .card {
+  
+  
+                .cardContent {
+                  padding: 4px 22px 10px;
+  
+  
+                     >div:first-child {
+                      display: flex;
+                      gap: 10px;
+                      font-size: 14px;
+                      color: $primary-text-color;
+                      
+                     }
+  
+  
+                     >div:last-child{
+                      color: $primary-text-color;
+                      font-size: $cards-font-size;
+                      font-weight: 600;
+                      padding-top: 5px;
+  
+                     }
+                     
+                }
+              
+              
+             }
+  
+                  .cardHeader {
+                     max-height: 205px;
+                     overflow: hidden;
+  
+                         >img {
+                              
+                              width: 100%;
+                              height: 241px;
+                              overflow: hidden;
+                              border-top-left-radius: 8px;
+                              border-top-right-radius: 8px;
+              }
+          }
+      }
+      
+  
+  }
+
+}
+

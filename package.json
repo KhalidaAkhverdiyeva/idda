@@ -1,0 +1,16 @@
+{
+  "name": "idda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "sass styles/scss/main.scss styles/css/main.css --style compressed",
+    "watch:sass": "sass --watch styles/scss/main.scss:styles/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.2"
+  }
+}
